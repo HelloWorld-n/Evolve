@@ -37,7 +37,7 @@ int main(int argc, char* args[]) {
 	SDL_Window *window = NULL;
 	SDL_Surface *screenSurface = NULL;
 	if (SDL_Init(SDL_INIT_VIDEO) < 0) {
-		std::cerr << "Error: \e[38;2;255;0;0m" << SDL_GetError() << "\e[0m;\n";
+		std::cerr << "Error: \e48;2;0;0;0m\e[38;2;255;0;0m" << SDL_GetError() << "\e[0m;\n";
 		return -418;
 	}
 	window = SDL_CreateWindow(
